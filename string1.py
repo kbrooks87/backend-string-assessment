@@ -29,7 +29,10 @@ __author__ = "???"
 
 def donuts(count):
     # your code here
-    return
+    if count >= 10:
+        return 'Number of donuts: many'
+    else:
+        return f'Number of donuts: {count}'
 
 
 # B. both_ends
@@ -43,7 +46,10 @@ def donuts(count):
 
 def both_ends(s):
     # your code here
-    return
+    if len(s) <=2:
+        return ''
+    else:
+        return f'{s[:2] + s[-2::1]}'
 
 
 # C. fix_start
