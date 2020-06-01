@@ -4,7 +4,7 @@ Kenzie assignment: String1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Kelly Brooks Help from string1 walkthrough Demo"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -46,7 +46,7 @@ def donuts(count):
 
 def both_ends(s):
     # your code here
-    if len(s) <=2:
+    if len(s) <= 2:
         return ''
     else:
         return f'{s[:2] + s[-2::1]}'
@@ -65,7 +65,12 @@ def both_ends(s):
 
 def fix_start(s):
     # your code here
-    return
+   # letter = 0
+    #for char in s:
+     #   letter + 1
+      #  if char == s[0]:
+       #     word = s.replace(s[letter], '*', len(s))
+    return s[0] + s[1:].replace(s[0], '*', len(s))
 
 
 # D. mix_up
@@ -79,9 +84,10 @@ def fix_start(s):
 
 
 def mix_up(a, b):
+    return f"{b[:2]}{a[2:]} {a[:2]}{b[2:]}"
+    #return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
     # your code here
-    return
-
+   # return a.replace(a[:2], b[:2]) + ' ' + b.replace(b[:2], a[:2])
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
