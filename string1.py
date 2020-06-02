@@ -49,7 +49,7 @@ def both_ends(s):
     if len(s) <= 2:
         return ''
     else:
-        return f'{s[:2] + s[-2::1]}'
+        return f'{s[:2] + s[-2:]}'
 
 
 # C. fix_start
@@ -65,13 +65,8 @@ def both_ends(s):
 
 def fix_start(s):
     # your code here
-   # letter = 0
-    #for char in s:
-     #   letter + 1
-      #  if char == s[0]:
-       #     word = s.replace(s[letter], '*', len(s))
-    return s[0] + s[1:].replace(s[0], '*', len(s))
 
+    return s[0] + s[1:].replace(s[0], '*', len(s))
 
 # D. mix_up
 # Given strings a and b, return a single string with a and
@@ -85,9 +80,7 @@ def fix_start(s):
 
 def mix_up(a, b):
     return f"{b[:2]}{a[2:]} {a[:2]}{b[2:]}"
-    #return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
-    # your code here
-   # return a.replace(a[:2], b[:2]) + ' ' + b.replace(b[:2], a[:2])
+
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
